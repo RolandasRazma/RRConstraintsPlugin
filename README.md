@@ -23,32 +23,33 @@ RRConstraintsPlugin for Xcode 5.1+ only supports OS X 10.9+.
 
 Gray out icons for "Remove at build time" constraints
 
-<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/RRConstraintsPlugin/Resources/ChangeLog/Images/remove_at_build_time.png" height="36px">
+
+<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/remove_at_build_time.png" height="36px">
 
 
 Differentiate when constraints firstItem is selected object
 
-<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/RRConstraintsPlugin/Resources/ChangeLog/Images/differentiate_when_firstitem.png" height="76px">
+<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/differentiate_when_firstitem.png" height="76px">
 
 
 Inline constant editing
 
-<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/RRConstraintsPlugin/Resources/ChangeLog/Images/inline_constant_editing.png" height="36px">
+<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/inline_constant_editing.png" height="36px">
 
 
 Reverse first and second item from menu
 
-<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/RRConstraintsPlugin/Resources/ChangeLog/Images/reverse_first_and_second-item_from_menu.png" height="91px">
+<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/reverse_first_and_second-item_from_menu.png" height="91px">
 
 
 Clicking constraint in editor will show "Attribute Inspector" in utilities bar
 
-<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/RRConstraintsPlugin/Resources/ChangeLog/Images/constraint_in_editor_attribute_inspector.png" height="36px">
+<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/constraint_in_editor_attribute_inspector.png" height="36px">
 
 
 Double clicking constraint in outline will open "Attribute Inspector" in utilities bar
 
-<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/RRConstraintsPlugin/Resources/ChangeLog/Images/double_click_constraint_in_outline_attribute_inspector.png" height="115px">
+<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/double_click_constraint_in_outline_attribute_inspector.png" height="115px">
 
 
 ## Uninstall
