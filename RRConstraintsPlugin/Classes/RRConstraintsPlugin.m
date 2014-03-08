@@ -92,8 +92,8 @@ static RRConstraintsPlugin *sharedPlugin;
         
         [[self.welcomeWindowController window] makeKeyAndOrderFront:self];
         
-//        [[NSUserDefaults standardUserDefaults] setObject:bundleVersion forKey:@"RRConstraintsPlugin.CFBundleVersion"];
-//        [[NSUserDefaults standardUserDefaults] synchronize];
+        [[NSUserDefaults standardUserDefaults] setObject:bundleVersion forKey:@"RRConstraintsPlugin.CFBundleVersion"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
     }
     
 }
