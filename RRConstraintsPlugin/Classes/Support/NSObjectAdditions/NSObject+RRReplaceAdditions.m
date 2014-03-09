@@ -56,14 +56,20 @@
         }
     }
     free(methods);
-
+    
     // Class methods
+    Class selfMetaClass = objc_getMetaClass(class_getName(selfClass));
+    Class otherMetaClass= objc_getMetaClass(class_getName(otherClass));
+    
     methods = class_copyMethodList(object_getClass(otherClass), &count);
     for ( NSUInteger i = 0; i < count ; i++ ) {
         SEL selector = method_getName(methods[i]);
         
-        Method newMethod = class_getClassMethod(otherClass, selector);
-        if( class_addMethod(selfClass, selector, method_getImplementation(newMethod), method_getTypeEncoding(newMethod)) ){
+        // skip +[NSObject load]
+        if( selector == @selector(load) ) continue;
+
+        Method newMethod = class_getClassMethod(otherMetaClass, selector);
+        if( class_addMethod(selfMetaClass, selector, method_getImplementation(newMethod), method_getTypeEncoding(newMethod)) ){
             
             const char *methodName = sel_getName(selector);
             if( strstr(methodName, prefix) != NULL ) {
@@ -84,8 +90,8 @@
 
 
 + (void)replaceClassSelector:(SEL)originalSelector withSelector:(SEL)newSelector {
-    
-    Class class = [self class];
+
+    Class class = objc_getMetaClass(class_getName([self class]));
     method_exchangeImplementations(class_getClassMethod(class, originalSelector), class_getClassMethod(class, newSelector));
 
 }
