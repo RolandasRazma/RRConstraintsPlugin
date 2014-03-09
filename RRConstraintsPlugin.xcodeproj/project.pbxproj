@@ -17,7 +17,6 @@
 		F03D88C018C5260B005C0DF6 /* RRInspectorReferencingConstraintView.m in Sources */ = {isa = PBXBuildFile; fileRef = F03D88BF18C5260B005C0DF6 /* RRInspectorReferencingConstraintView.m */; };
 		F063112518C5426500B643BE /* RRLayoutConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F063112418C5426500B643BE /* RRLayoutConstant.m */; };
 		F0758FFF18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0758FFE18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m */; };
-		F09A7A9318CB514300F698D3 /* NSObject+RRDumpAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F09A7A9218CB514300F698D3 /* NSObject+RRDumpAdditions.m */; };
 		F0CFA88218CA814600D223C6 /* RRCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFA88118CA814600D223C6 /* RRCanvasViewController.m */; };
 		F0D91F4018CBA4E900C95205 /* constraint_in_editor_attribute_inspector.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D91F3918CBA4E900C95205 /* constraint_in_editor_attribute_inspector.png */; };
 		F0D91F4118CBA4E900C95205 /* differentiate_when_firstitem.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D91F3A18CBA4E900C95205 /* differentiate_when_firstitem.png */; };
@@ -50,8 +49,6 @@
 		F063BEA418C533B700695BDE /* RRInspectorReferencingConstraintViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRInspectorReferencingConstraintViewDelegate.h; sourceTree = "<group>"; };
 		F0758FFD18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RRReplaceAdditions.h"; sourceTree = "<group>"; };
 		F0758FFE18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RRReplaceAdditions.m"; sourceTree = "<group>"; };
-		F09A7A9118CB514300F698D3 /* NSObject+RRDumpAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RRDumpAdditions.h"; sourceTree = "<group>"; };
-		F09A7A9218CB514300F698D3 /* NSObject+RRDumpAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RRDumpAdditions.m"; sourceTree = "<group>"; };
 		F09A7A9618CB521C00F698D3 /* IBCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBCanvasViewController.h; sourceTree = "<group>"; };
 		F09A7A9718CB521C00F698D3 /* IBInspectorReferencingConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBInspectorReferencingConstraintViewController.h; sourceTree = "<group>"; };
 		F09A7A9818CB521C00F698D3 /* IBOutlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBOutlineViewController.h; sourceTree = "<group>"; };
@@ -190,8 +187,6 @@
 			children = (
 				F0758FFD18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.h */,
 				F0758FFE18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m */,
-				F09A7A9118CB514300F698D3 /* NSObject+RRDumpAdditions.h */,
-				F09A7A9218CB514300F698D3 /* NSObject+RRDumpAdditions.m */,
 			);
 			path = NSObjectAdditions;
 			sourceTree = "<group>";
@@ -405,7 +400,6 @@
 				F0758FFF18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m in Sources */,
 				F0FBFC3F18C664A600F8F2E2 /* RRInspectorBooleanProperty.m in Sources */,
 				F063112518C5426500B643BE /* RRLayoutConstant.m in Sources */,
-				F09A7A9318CB514300F698D3 /* NSObject+RRDumpAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
