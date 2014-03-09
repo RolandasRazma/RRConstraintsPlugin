@@ -1,4 +1,5 @@
-## RRConstraintsPlugin
+![RRConstraintsPlugin](https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/Images/header@2x.png)
+
 
 RRConstraintsPlugin is an [open-source](https://github.com/RolandasRazma/RRConstraintsPlugin) plugin for Xcode 5.1+. It improves workflow for constraints based layout by adding new features to Xcode Interface Builder.
 
