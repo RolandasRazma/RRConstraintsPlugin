@@ -6,7 +6,7 @@ RRConstraintsPlugin is an [open-source](https://github.com/RolandasRazma/RRConst
 
 ## Installation
 
-1. Download the repository from [Github](https://github.com/RolandasRazma/RRConstraintsPlugin) and build the project to install the plugin. The plugin is installed in `~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/RRConstraintsPlugin.xcplugin`.
+1. Download the repository from [GitHub](https://github.com/RolandasRazma/RRConstraintsPlugin) and build the project to install the plugin. The plugin is installed in `~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/RRConstraintsPlugin.xcplugin`.
 
 2. Restart Xcode for the plugin to be activated.
 
