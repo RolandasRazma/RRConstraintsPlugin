@@ -26,6 +26,6 @@
 @protocol IDEBindableDeclarativeInspectorController <NSObject>
 @optional
 
-@property(readonly) id inspectedObject;
+@property(readonly) NSArray *inspectedObjects;
 
 @end

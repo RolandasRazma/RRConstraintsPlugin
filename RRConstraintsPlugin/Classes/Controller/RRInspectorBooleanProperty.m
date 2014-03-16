@@ -52,10 +52,12 @@
     [self rr_refresh];
     
     // IBLayoutConstraint
-    id <IBDocumentObjectMemberWrapper>inspectedObject = [[self inspectorController] inspectedObject];
-    if( [inspectedObject isKindOfClass:NSClassFromString(@"IBDocumentObjectMemberWrapper")] ){
-        if( [[inspectedObject object] isKindOfClass:NSClassFromString(@"IBLayoutConstraint")] ){
-            [inspectedObject rebuildChildWrappers];
+    NSArray *inspectedObjects = [[self inspectorController] inspectedObjects];
+    for( id inspectedObject in inspectedObjects ){
+        if( [inspectedObject isKindOfClass: NSClassFromString(@"IBDocumentObjectMemberWrapper")] ){
+            if( [[inspectedObject object] isKindOfClass:NSClassFromString(@"IBLayoutConstraint")] ){
+                [inspectedObject rebuildChildWrappers];
+            }
         }
     }
 }
