@@ -25,13 +25,16 @@
 @import Cocoa;
 
 
-@class IBCanvasViewController;
+@class IBCanvasViewController, IBDocument, IBStructureViewController, IBCancellationToken;
 
 
 @protocol IBAbstractDocumentEditor <NSObject>
 @optional
 
 @property(retain, nonatomic) IBCanvasViewController *canvasViewController;
+@property(retain, nonatomic) IBStructureViewController *structureViewController;
+
++ (NSArray *)visibleDocumentEditorControllersFromBackToFrontInDocument:(IBDocument *)document;
 
 @end
 

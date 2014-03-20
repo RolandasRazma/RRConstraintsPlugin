@@ -1,5 +1,5 @@
 //
-//  IDEInspectorProperty.h
+//  IBNavigationOutlineViewController.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -22,22 +22,15 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-
-@protocol IDEBindableDeclarativeInspectorController;
-@class IDEInspectorKeyPath;
+#import "IBNavigationOutlineViewController.h"
 
 
-@protocol IDEInspectorProperty <NSObject>
+@protocol IBStoryboardNavigationOutlineViewController <IBNavigationOutlineViewController>
 @optional
-
-@property(retain) NSObject<IDEBindableDeclarativeInspectorController> *inspectorController;
-
-- (void)refresh;
-- (NSArray *)allValuesForKeyPath:(IDEInspectorKeyPath *)keyPath;
 
 @end
 
 
-@interface IDEInspectorProperty : NSObject <IDEInspectorProperty>
+@interface IBStoryboardNavigationOutlineViewController : IBNavigationOutlineViewController <IBStoryboardNavigationOutlineViewController>
 
 @end

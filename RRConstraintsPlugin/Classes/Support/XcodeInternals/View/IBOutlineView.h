@@ -1,5 +1,5 @@
 //
-//  IDEInspectorProperty.h
+//  IBInspectorReferencingConstraintView.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -23,21 +23,14 @@
 //  THE SOFTWARE.
 
 
-@protocol IDEBindableDeclarativeInspectorController;
-@class IDEInspectorKeyPath;
-
-
-@protocol IDEInspectorProperty <NSObject>
+@protocol IBOutlineView <NSObject>
 @optional
 
-@property(retain) NSObject<IDEBindableDeclarativeInspectorController> *inspectorController;
-
-- (void)refresh;
-- (NSArray *)allValuesForKeyPath:(IDEInspectorKeyPath *)keyPath;
+@property(retain, nonatomic) NSSet *highlightedRows;
 
 @end
 
 
-@interface IDEInspectorProperty : NSObject <IDEInspectorProperty>
+@interface IBOutlineView : NSOutlineView <IBOutlineView>
 
 @end

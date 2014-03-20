@@ -23,13 +23,14 @@
 //  THE SOFTWARE.
 
 
-@class IBMemberID;
+@class IBMemberID, IBDocumentMemberWrapper;
 
 
 @protocol IBDocument <NSObject>
 @optional
 
 - (id)memberForMemberID:(IBMemberID *)memberID;
+- (IBDocumentMemberWrapper *)memberWrapperForMember:(id)member;
 
 @end
 

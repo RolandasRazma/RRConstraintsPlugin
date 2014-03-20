@@ -23,17 +23,19 @@
 //  THE SOFTWARE.
 
 
-@class IBOutlineViewControllerItem, IBDocumentObjectMemberWrapper, IBOutlineView, IBAbstractDocumentEditor;
+@class IBOutlineViewControllerItem, IBDocumentObjectMemberWrapper, IBOutlineView, IBAbstractDocumentEditor, IBDocumentMemberWrapper;
 
 
 @protocol IBOutlineViewController <NSObject>
 @optional
 
 @property(nonatomic) __weak IBAbstractDocumentEditor *documentEditor;
+@property(retain) IBOutlineView *outlineView;
 
 - (IBOutlineViewControllerItem *)itemTreeFromMemberWrapperTree:(IBDocumentObjectMemberWrapper *)wrapperTree explicitItemClass:(Class)itemClass;
 - (void)outlineViewWasDoubleClicked:(IBOutlineView *)outlineView;
 - (NSArray *)readSelectedMembersFromOutlineView;
+- (IBOutlineViewControllerItem *)itemForMemberWrapper:(IBDocumentMemberWrapper *)memberWrapper;
 
 @end
 

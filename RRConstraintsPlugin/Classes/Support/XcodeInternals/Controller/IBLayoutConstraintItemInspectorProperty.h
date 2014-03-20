@@ -22,22 +22,22 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+#import "IDEInspectorProperty.h"
 
-@protocol IDEBindableDeclarativeInspectorController;
-@class IDEInspectorKeyPath;
+@class IBDocument, IBLayoutConstraintItemInspectorBackgroundView;
 
 
-@protocol IDEInspectorProperty <NSObject>
+@protocol IBLayoutConstraintItemInspectorProperty <IDEInspectorProperty>
 @optional
 
-@property(retain) NSObject<IDEBindableDeclarativeInspectorController> *inspectorController;
+- (IBDocument *)inspectedDocument;
+- (void)didStartRollingOverItemInspectorBackgroundView:(IBLayoutConstraintItemInspectorBackgroundView *)view;
+- (void)didFinishRollingOverItemInspectorBackgroundView:(IBLayoutConstraintItemInspectorBackgroundView *)view;
 
-- (void)refresh;
-- (NSArray *)allValuesForKeyPath:(IDEInspectorKeyPath *)keyPath;
-
+    
 @end
 
 
-@interface IDEInspectorProperty : NSObject <IDEInspectorProperty>
+@interface IBLayoutConstraintItemInspectorProperty : IDEInspectorProperty <IBLayoutConstraintItemInspectorProperty>
 
 @end

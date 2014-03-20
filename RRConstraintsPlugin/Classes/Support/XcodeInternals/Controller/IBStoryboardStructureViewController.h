@@ -1,5 +1,5 @@
 //
-//  IDEInspectorProperty.h
+//  IBHybridStructureViewController.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -22,22 +22,22 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+@import Cocoa;
 
-@protocol IDEBindableDeclarativeInspectorController;
-@class IDEInspectorKeyPath;
+#import "IBStructureViewController.h"
 
 
-@protocol IDEInspectorProperty <NSObject>
+@class IBStoryboardNavigationOutlineViewController;
+
+
+@protocol IBStoryboardStructureViewController <IBStructureViewController>
 @optional
 
-@property(retain) NSObject<IDEBindableDeclarativeInspectorController> *inspectorController;
-
-- (void)refresh;
-- (NSArray *)allValuesForKeyPath:(IDEInspectorKeyPath *)keyPath;
+@property(retain) IBStoryboardNavigationOutlineViewController *documentOutlineViewController;
 
 @end
 
 
-@interface IDEInspectorProperty : NSObject <IDEInspectorProperty>
+@interface IBStoryboardStructureViewController : NSViewController <IBStoryboardStructureViewController>
 
 @end
