@@ -22,6 +22,12 @@ RRConstraintsPlugin for Xcode 5.1+ only supports OS X 10.9+.
 
 ## Features
 
+Highlight item in outline also when constraint item hovered
+
+
+<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/highlite_in_outline_on_hover.png" height=“73px">
+
+
 Gray out icons for "Remove at build time" constraints
 
 
