@@ -34,9 +34,7 @@
 @end
 
 
-@implementation RRInspectorReferencingConstraintViewController {
-
-}
+@implementation RRInspectorReferencingConstraintViewController
 
 
 #pragma mark -
@@ -75,6 +73,15 @@
 }
 
 
+- (NSColor *)rr_leftHandLabelTextColor {
+    if( self.constraint.secondItem && ![self.constraint.secondItem isEqual:self.relatedViewInConstraintRelationship] ){
+        return [NSColor grayColor];
+    }
+    
+    return [self rr_leftHandLabelTextColor];
+}
+
+
 - (NSFont *)rr_rightHandLabelFont {
     NSFont *rightHandLabelFont = [self rr_rightHandLabelFont];
 
@@ -83,6 +90,15 @@
     }
     
     return rightHandLabelFont;
+}
+
+
+- (NSColor *)rr_rightHandLabelTextColor {
+    if( self.constraint.secondItem && ![self.constraint.secondItem isEqual:self.relatedViewInConstraintRelationship] ){
+        return [NSColor grayColor];
+    }
+    
+    return [self rr_rightHandLabelTextColor];
 }
 
 

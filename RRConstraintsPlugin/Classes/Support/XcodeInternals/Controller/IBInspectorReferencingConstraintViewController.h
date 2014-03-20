@@ -36,7 +36,9 @@
 - (NSView *)relatedViewInConstraintRelationship;                // constraint.secondItem
 - (void)updateImageView;
 - (NSFont *)leftHandLabelFont;
+- (NSColor *)leftHandLabelTextColor;
 - (NSFont *)rightHandLabelFont;
+- (NSColor *)rightHandLabelTextColor;
 - (void)updateMenuItems;
 
 @end
