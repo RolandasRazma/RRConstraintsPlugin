@@ -22,7 +22,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-// grep -Rs "<className>" /Applications/Xcode.app/
+// grep -Rs "<className>" /Applications/Xcode.app/ | grep Binary
 // class-dump -HISs -o Headers /Applications/Xcode.app/Contents/PlugIns/IDEInterfaceBuilderKit.ideplugin/Contents/MacOS/IDEInterfaceBuilderKit
 //
 
