@@ -28,7 +28,7 @@ Highlight item in outline also when constraint item hovered
 <img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/highlite_in_outline_on_hover.png" width="244">
 
 
-Gray out icons for "Remove at build time" constraints
+Grayed out icons for "Remove at build time" constraints
 
 
 <img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/remove_at_build_time.png" width="244">
