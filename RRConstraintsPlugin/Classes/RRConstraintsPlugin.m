@@ -82,8 +82,8 @@ static RRConstraintsPlugin *sharedPlugin;
 
 - (void)applicationDidFinishLaunchingNotification:(NSNotification *)notification {
 
-    NSString *bundleVersion = [[self.bundle infoDictionary] objectForKey:@"CFBundleVersion"];
-    NSString *oldBundleVersion = [[NSUserDefaults standardUserDefaults] objectForKey:@"RRConstraintsPlugin.CFBundleVersion"];
+    NSString *bundleVersion = [[self.bundle infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    NSString *oldBundleVersion = [[NSUserDefaults standardUserDefaults] objectForKey:@"RRConstraintsPlugin.CFBundleShortVersionString"];
     
     if( ![oldBundleVersion isEqualToString:bundleVersion] ){
         if( !self.welcomeWindowController ){
@@ -92,7 +92,7 @@ static RRConstraintsPlugin *sharedPlugin;
         
         [[self.welcomeWindowController window] makeKeyAndOrderFront:self];
         
-        [[NSUserDefaults standardUserDefaults] setObject:bundleVersion forKey:@"RRConstraintsPlugin.CFBundleVersion"];
+        [[NSUserDefaults standardUserDefaults] setObject:bundleVersion forKey:@"RRConstraintsPlugin.CFBundleShortVersionString"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     
