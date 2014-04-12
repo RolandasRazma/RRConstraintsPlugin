@@ -26,6 +26,7 @@
 #import "IBInspectorReferencingConstraintView.h"
 #import "NSImage+RRFilters.h"
 #import "IBLayoutConstraint.h"
+#import "IBLayoutConstant.h"
 #import <objc/runtime.h>
 
 
