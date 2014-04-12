@@ -12,6 +12,7 @@
 		890A4B43171F031300AFE577 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890A4B42171F031300AFE577 /* AppKit.framework */; };
 		890A4B45171F031300AFE577 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890A4B44171F031300AFE577 /* Foundation.framework */; };
 		F00BDA6018DB33C7007A3B43 /* highlite_in_outline_on_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = F00BDA5E18DB33C7007A3B43 /* highlite_in_outline_on_hover.png */; };
+		F012008318F9A8AC00511F84 /* distribute_views.png in Resources */ = {isa = PBXBuildFile; fileRef = F012008218F9A8AC00511F84 /* distribute_views.png */; };
 		F01FCE3C18C3740B00F71C33 /* RRConstraintsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F01FCE3B18C3740B00F71C33 /* RRConstraintsPlugin.m */; };
 		F0211FF418C65071007E403F /* RROutlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0211FF318C65071007E403F /* RROutlineViewController.m */; };
 		F02F934118CB8A690015A342 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F02F934018CB8A690015A342 /* index.html */; };
@@ -45,6 +46,7 @@
 		890A4B4F171F031300AFE577 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		F0032B4018DB3E110065A2B4 /* IBStoryboardNavigationOutlineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBStoryboardNavigationOutlineViewController.h; sourceTree = "<group>"; };
 		F00BDA5E18DB33C7007A3B43 /* highlite_in_outline_on_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highlite_in_outline_on_hover.png; sourceTree = "<group>"; };
+		F012008218F9A8AC00511F84 /* distribute_views.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = distribute_views.png; sourceTree = "<group>"; };
 		F01FCE3A18C3740B00F71C33 /* RRConstraintsPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRConstraintsPlugin.h; sourceTree = "<group>"; };
 		F01FCE3B18C3740B00F71C33 /* RRConstraintsPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRConstraintsPlugin.m; sourceTree = "<group>"; };
 		F0211FF318C65071007E403F /* RROutlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RROutlineViewController.m; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 			children = (
 				F0D91F3918CBA4E900C95205 /* constraint_in_editor_attribute_inspector.png */,
 				F0D91F3A18CBA4E900C95205 /* differentiate_when_firstitem.png */,
+				F012008218F9A8AC00511F84 /* distribute_views.png */,
 				F0D91F3B18CBA4E900C95205 /* double_click_constraint_in_outline_attribute_inspector.png */,
 				F00BDA5E18DB33C7007A3B43 /* highlite_in_outline_on_hover.png */,
 				F0D91F3C18CBA4E900C95205 /* inline_constant_editing.png */,
@@ -410,6 +413,7 @@
 				F0D91F4218CBA4E900C95205 /* double_click_constraint_in_outline_attribute_inspector.png in Resources */,
 				F0F8206718CB720100A99AD3 /* RRWelcomeWindowController.xib in Resources */,
 				F0D91F4318CBA4E900C95205 /* inline_constant_editing.png in Resources */,
+				F012008318F9A8AC00511F84 /* distribute_views.png in Resources */,
 				F02F934118CB8A690015A342 /* index.html in Resources */,
 				F0D91F4018CBA4E900C95205 /* constraint_in_editor_attribute_inspector.png in Resources */,
 			);

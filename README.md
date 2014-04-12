@@ -49,6 +49,11 @@ Reverse first and second item from menu
 <img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/reverse_first_and_second-item_from_menu.png" width="244">
 
 
+Distribute views horizontally/vertically (for same width/height views)
+
+<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/distribute_views.png" width="244">
+
+
 Clicking constraint in editor will show "Attribute Inspector" in utilities bar
 
 <img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/master/RRConstraintsPlugin/Resources/ChangeLog/Images/constraint_in_editor_attribute_inspector.png" width="244">
