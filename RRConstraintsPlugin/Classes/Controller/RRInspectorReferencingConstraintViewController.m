@@ -158,4 +158,9 @@
 }
 
 
+- (void)constraintViewDidDoubleClick:(IBInspectorReferencingConstraintView *)view {
+    [self.delegate referencingConstraintViewControllerSelectConstraint: (IBInspectorReferencingConstraintViewController *)self];
+}
+
+
 @end

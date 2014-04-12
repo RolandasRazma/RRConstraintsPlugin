@@ -1,5 +1,5 @@
 //
-//  IBInspectorReferencingConstraintViewController.h
+//  IBInspectorReferencingConstraintViewControllerDelegate.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -22,31 +22,11 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import "IBInspectorReferencingConstraintViewControllerDelegate.h"
+@class IBInspectorReferencingConstraintViewController;
 
 
-@class IBLayoutConstraint, IBInspectorReferencingConstraintView;
+@protocol IBInspectorReferencingConstraintViewControllerDelegate <NSObject>
 
-
-@protocol IBInspectorReferencingConstraintViewController <NSObject>
-@optional
-
-@property(readonly, nonatomic) IBLayoutConstraint *constraint;
-@property(retain, nonatomic) NSMenuItem *deleteMenuItem;
-@property(nonatomic) __weak id <IBInspectorReferencingConstraintViewControllerDelegate> delegate;
-
-- (IBInspectorReferencingConstraintView *)constraintView;
-- (NSView *)relatedViewInConstraintRelationship;                // constraint.secondItem
-- (void)updateImageView;
-- (NSFont *)leftHandLabelFont;
-- (NSColor *)leftHandLabelTextColor;
-- (NSFont *)rightHandLabelFont;
-- (NSColor *)rightHandLabelTextColor;
-- (void)updateMenuItems;
-
-@end
-
-
-@interface IBInspectorReferencingConstraintViewController : NSViewController <IBInspectorReferencingConstraintViewController>
+- (void)referencingConstraintViewControllerSelectConstraint:(IBInspectorReferencingConstraintViewController *)inspectorReferencingConstraintViewController;
 
 @end

@@ -48,6 +48,19 @@
 
 
 #pragma mark -
+#pragma mark NSResponder
+
+
+- (void)mouseUp:(NSEvent *)event {
+    [super mouseUp:event];
+    
+    if( event.clickCount == 2 ){
+        [self.delegate constraintViewDidDoubleClick: (IBInspectorReferencingConstraintView *)self];
+    }
+}
+
+
+#pragma mark -
 #pragma mark NSView
 
 

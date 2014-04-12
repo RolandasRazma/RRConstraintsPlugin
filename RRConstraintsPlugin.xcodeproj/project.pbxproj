@@ -19,6 +19,7 @@
 		F03D88C018C5260B005C0DF6 /* RRInspectorReferencingConstraintView.m in Sources */ = {isa = PBXBuildFile; fileRef = F03D88BF18C5260B005C0DF6 /* RRInspectorReferencingConstraintView.m */; };
 		F063112518C5426500B643BE /* RRLayoutConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F063112418C5426500B643BE /* RRLayoutConstant.m */; };
 		F0758FFF18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0758FFE18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m */; };
+		F08E7A7818F9BEC900FFF40C /* double_click_to_edit.png in Resources */ = {isa = PBXBuildFile; fileRef = F08E7A7718F9BEC900FFF40C /* double_click_to_edit.png */; };
 		F0CFA88218CA814600D223C6 /* RRCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFA88118CA814600D223C6 /* RRCanvasViewController.m */; };
 		F0D91F4018CBA4E900C95205 /* constraint_in_editor_attribute_inspector.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D91F3918CBA4E900C95205 /* constraint_in_editor_attribute_inspector.png */; };
 		F0D91F4118CBA4E900C95205 /* differentiate_when_firstitem.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D91F3A18CBA4E900C95205 /* differentiate_when_firstitem.png */; };
@@ -47,6 +48,7 @@
 		F0032B4018DB3E110065A2B4 /* IBStoryboardNavigationOutlineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBStoryboardNavigationOutlineViewController.h; sourceTree = "<group>"; };
 		F00BDA5E18DB33C7007A3B43 /* highlite_in_outline_on_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highlite_in_outline_on_hover.png; sourceTree = "<group>"; };
 		F012008218F9A8AC00511F84 /* distribute_views.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = distribute_views.png; sourceTree = "<group>"; };
+		F012B83C18F9BA0100446352 /* IBInspectorReferencingConstraintViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBInspectorReferencingConstraintViewControllerDelegate.h; sourceTree = "<group>"; };
 		F01FCE3A18C3740B00F71C33 /* RRConstraintsPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRConstraintsPlugin.h; sourceTree = "<group>"; };
 		F01FCE3B18C3740B00F71C33 /* RRConstraintsPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRConstraintsPlugin.m; sourceTree = "<group>"; };
 		F0211FF318C65071007E403F /* RROutlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RROutlineViewController.m; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		F063BEA418C533B700695BDE /* RRInspectorReferencingConstraintViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRInspectorReferencingConstraintViewDelegate.h; sourceTree = "<group>"; };
 		F0758FFD18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RRReplaceAdditions.h"; sourceTree = "<group>"; };
 		F0758FFE18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RRReplaceAdditions.m"; sourceTree = "<group>"; };
+		F08E7A7718F9BEC900FFF40C /* double_click_to_edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = double_click_to_edit.png; sourceTree = "<group>"; };
 		F09A7A9618CB521C00F698D3 /* IBCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBCanvasViewController.h; sourceTree = "<group>"; };
 		F09A7A9718CB521C00F698D3 /* IBInspectorReferencingConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBInspectorReferencingConstraintViewController.h; sourceTree = "<group>"; };
 		F09A7A9818CB521C00F698D3 /* IBOutlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBOutlineViewController.h; sourceTree = "<group>"; };
@@ -287,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				F09A7AA418CB521C00F698D3 /* IBAutolayoutItem.h */,
+				F012B83C18F9BA0100446352 /* IBInspectorReferencingConstraintViewControllerDelegate.h */,
 				F09A7AA518CB521C00F698D3 /* IBInspectorReferencingConstraintViewDelegate.h */,
 				F09A7AA618CB521C00F698D3 /* IDEBindableDeclarativeInspectorController.h */,
 			);
@@ -319,6 +323,7 @@
 				F0D91F3A18CBA4E900C95205 /* differentiate_when_firstitem.png */,
 				F012008218F9A8AC00511F84 /* distribute_views.png */,
 				F0D91F3B18CBA4E900C95205 /* double_click_constraint_in_outline_attribute_inspector.png */,
+				F08E7A7718F9BEC900FFF40C /* double_click_to_edit.png */,
 				F00BDA5E18DB33C7007A3B43 /* highlite_in_outline_on_hover.png */,
 				F0D91F3C18CBA4E900C95205 /* inline_constant_editing.png */,
 				F0D91F3D18CBA4E900C95205 /* remove_at_build_time.png */,
@@ -408,6 +413,7 @@
 			files = (
 				F0D91F4418CBA4E900C95205 /* remove_at_build_time.png in Resources */,
 				F00BDA6018DB33C7007A3B43 /* highlite_in_outline_on_hover.png in Resources */,
+				F08E7A7818F9BEC900FFF40C /* double_click_to_edit.png in Resources */,
 				F0D91F4518CBA4E900C95205 /* reverse_first_and_second-item_from_menu.png in Resources */,
 				F0D91F4118CBA4E900C95205 /* differentiate_when_firstitem.png in Resources */,
 				F0D91F4218CBA4E900C95205 /* double_click_constraint_in_outline_attribute_inspector.png in Resources */,

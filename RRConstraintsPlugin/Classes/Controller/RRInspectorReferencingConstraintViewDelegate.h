@@ -29,5 +29,6 @@
 @protocol RRInspectorReferencingConstraintViewDelegate <IBInspectorReferencingConstraintViewDelegate>
 
 - (void)constraintViewDidChangeConstantValue:(IBInspectorReferencingConstraintView *)view;
+- (void)constraintViewDidDoubleClick:(IBInspectorReferencingConstraintView *)view;
 
 @end
