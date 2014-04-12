@@ -1,5 +1,5 @@
 //
-//  IBLayoutConstant.h
+//  IBAutolayoutConstraintAdditionTypeConfig.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -23,18 +23,16 @@
 //  THE SOFTWARE.
 
 
-@protocol IBLayoutConstant <NSObject>
+@protocol IBAutolayoutConstraintAdditionTypeConfig <NSObject>
 @optional
 
-@property(readonly) double value;
-
-- (id)initWithValue:(double)constant;
-- (id)constantBySettingValueToValue:(double)newValue;
+@property (copy, nonatomic) NSSet *constraints;
+@property (nonatomic) BOOL enabled;
 
 @end
 
 
-@interface IBLayoutConstant : NSObject <IBLayoutConstant>
+@interface IBAutolayoutConstraintAdditionTypeConfig : NSObject <IBAutolayoutConstraintAdditionTypeConfig>
 
 @end
 

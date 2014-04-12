@@ -1,5 +1,5 @@
 //
-//  IBLayoutConstant.h
+//  IBAutolayoutConstraintAdditionViewController.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -22,19 +22,22 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+@import Cocoa;
 
-@protocol IBLayoutConstant <NSObject>
+@class IBAutolayoutConstraintAdditionTypeConfig, IBDocument;
+
+
+@protocol IBAutolayoutConstraintAdditionViewController <NSObject>
 @optional
 
-@property(readonly) double value;
-
-- (id)initWithValue:(double)constant;
-- (id)constantBySettingValueToValue:(double)newValue;
-
-@end
-
-
-@interface IBLayoutConstant : NSObject <IBLayoutConstant>
+- (void)_addEdgeOrCenterAlignmentTypeConfigurationsToSet:(NSMutableSet *)typeConfigurations;
+- (IBAutolayoutConstraintAdditionTypeConfig *)_typeConfigurationWithField:(id /* DVTButtonTextField */)textField checkBox:(id /* NSButton */)button startingConstant:(id /* _NSStateMarker */)startingConstant andConstraints:(NSSet *)constraints;
+- (IBAutolayoutConstraintAdditionTypeConfig *)_typeConfigurationForAlignmentType:(unsigned long long)alignmentType;
+- (IBDocument *)document;
 
 @end
 
+
+@interface IBAutolayoutConstraintAdditionViewController : NSViewController <IBAutolayoutConstraintAdditionViewController>
+
+@end

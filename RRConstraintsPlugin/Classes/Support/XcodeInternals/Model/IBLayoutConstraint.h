@@ -22,10 +22,9 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import "IBAutolayoutItem.h"
-#import "IBLayoutConstant.h"
 
-@class IBDocument;
+@class IBDocument, IBLayoutConstraintMultiplier, IBLayoutConstant;
+@protocol IBAutolayoutItem;
 
 
 @protocol IBLayoutConstraint <NSObject>
@@ -35,9 +34,11 @@
 @property(nonatomic, getter=isPlaceholder) BOOL placeholder;
 @property(nonatomic) NSObject<IBAutolayoutItem> *firstItem;
 @property(nonatomic) NSObject<IBAutolayoutItem> *secondItem;
+@property(nonatomic) NSObject<IBAutolayoutItem> *containingView;
+
+- (instancetype)initWithFirstItem:(id)view1 firstAttribute:(NSLayoutAttribute)attribute1 relation:(NSLayoutRelation)relation secondItem:(id)view2 secondAttribute:(NSLayoutAttribute)secondAttribute multiplier:(IBLayoutConstraintMultiplier *)multiplier constant:(IBLayoutConstant *)constant priority:(double)priority;
 
 - (void)reverseFirstAndSecondItem;
-
 - (void)setIbInspectedConstant:(IBLayoutConstant *)layoutConstant document:(IBDocument *)document frameDecideAfterSettingConstant:(BOOL)decide;
 
 @end

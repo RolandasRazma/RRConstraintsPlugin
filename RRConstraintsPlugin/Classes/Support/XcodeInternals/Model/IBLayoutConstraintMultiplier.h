@@ -1,5 +1,5 @@
 //
-//  IBLayoutConstant.h
+//  IBLayoutConstraintMultiplier.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -23,18 +23,15 @@
 //  THE SOFTWARE.
 
 
-@protocol IBLayoutConstant <NSObject>
+@protocol IBLayoutConstraintMultiplier <NSObject>
 @optional
 
-@property(readonly) double value;
-
-- (id)initWithValue:(double)constant;
-- (id)constantBySettingValueToValue:(double)newValue;
+- (id)initWithValue:(double)value stringValue:(NSString *)stringValue;
 
 @end
 
 
-@interface IBLayoutConstant : NSObject <IBLayoutConstant>
+@interface IBLayoutConstraintMultiplier : NSObject <IBLayoutConstraintMultiplier>
 
 @end
 
