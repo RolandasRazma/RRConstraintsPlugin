@@ -96,7 +96,7 @@
     }
 
 
-    // Distribute - Horizontal (if widths are same)
+    // Distribute - Horizontally (if widths are same)
     if( commonSize.width ){
         // Sort on X axis
         [affectedItems sortUsingComparator:^NSComparisonResult(NSView *obj1, NSView *obj2) {
@@ -139,7 +139,7 @@
     }
 
     
-    // Distribute - Vertical (if heights are same)
+    // Distribute - Vertically (if heights are same)
     if( commonSize.height ){
         // Sort on Y axis
         [affectedItems sortUsingComparator:^NSComparisonResult(NSView *obj1, NSView *obj2) {
@@ -190,15 +190,15 @@
     // separator
     [alignPopUpMenu addItem: [NSMenuItem separatorItem]];
     
-    // Distribute - Horizontal
+    // Distribute - Horizontally
     NSMenuItem *horizontalMenuItem = [[NSMenuItem alloc] init];
-    [horizontalMenuItem setTitle:@"Distribute Horizontaly"];
+    [horizontalMenuItem setTitle:@"Distribute Horizontally"];
     [horizontalMenuItem setTag: 101];
     [alignPopUpMenu addItem: horizontalMenuItem];
     
     // Distribute - Vertical
     NSMenuItem *verticalMenuItem = [[NSMenuItem alloc] init];
-    [verticalMenuItem setTitle:@"Distribute Verticaly"];
+    [verticalMenuItem setTitle:@"Distribute Vertically"];
     [verticalMenuItem setTag: 102];
     [alignPopUpMenu addItem: verticalMenuItem];
     
