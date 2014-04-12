@@ -190,24 +190,16 @@
     // separator
     [alignPopUpMenu addItem: [NSMenuItem separatorItem]];
     
-    // Distribute
-    NSMenuItem *distributeMenuItem = [[NSMenuItem alloc] init];
-    [distributeMenuItem setTitle:@"Distribute by spacing"];
-    [distributeMenuItem setTag: 100];
-    [alignPopUpMenu addItem: distributeMenuItem];
-    
     // Distribute - Horizontal
     NSMenuItem *horizontalMenuItem = [[NSMenuItem alloc] init];
-    [horizontalMenuItem setTitle:@"Horizontal"];
+    [horizontalMenuItem setTitle:@"Distribute Horizontaly"];
     [horizontalMenuItem setTag: 101];
-    [horizontalMenuItem setIndentationLevel:1];
     [alignPopUpMenu addItem: horizontalMenuItem];
     
     // Distribute - Vertical
     NSMenuItem *verticalMenuItem = [[NSMenuItem alloc] init];
-    [verticalMenuItem setTitle:@"Vertical"];
+    [verticalMenuItem setTitle:@"Distribute Verticaly"];
     [verticalMenuItem setTag: 102];
-    [verticalMenuItem setIndentationLevel:1];
     [alignPopUpMenu addItem: verticalMenuItem];
     
     [self rr_setAlignPopUpMenu:alignPopUpMenu];
