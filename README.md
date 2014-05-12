@@ -79,3 +79,8 @@ Open up your terminal and paste this:
 ```bash
 rm -rf ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/RRConstraintsPlugin.xcplugin
 ```
+
+## Contributing
+`Dude, this is osom, can I help?` - glad you asked! Ofcourse you can. There is 2 ways of doing this.
+ 1. fork, fix/add feature, create pull request
+ 2. create issue and ask for new features
