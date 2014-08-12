@@ -17,7 +17,7 @@ use [Alcatraz](https://github.com/supermarin/Alcatraz)
 
 ## Requirements
 
-RRConstraintsPlugin for Xcode 5.1+ only supports OS X 10.9+.
+RRConstraintsPlugin for Xcode 5.1 only supports OS X 10.9+.
 
 
 ## Features
