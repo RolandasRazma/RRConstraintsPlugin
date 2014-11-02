@@ -37,26 +37,6 @@ Grayed out icons for "Remove at build time" constraints
 <img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/remove_at_build_time.png" width="244">
 
 
-Differentiate when constraints firstItem is selected object
-
-<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/differentiate_when_firstitem.png" width="244">
-
-
-Inline constant editing
-
-<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/inline_constant_editing.png" width="244">
-
-
-Reverse first and second item from menu
-
-<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/reverse_first_and_second-item_from_menu.png" width="244">
-
-
-Double-Click constraint to "Select and Edit..."
-
-<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/double_click_to_edit.png" width="244">
-
-
 Distribute views horizontally/vertically (for same width/height views)
 
 <img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/distribute_views.png" width="244">
