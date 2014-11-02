@@ -1,5 +1,5 @@
 //
-//  RRViewEditorLayoutConstraintDrawable.m
+//  RRAutolayoutConstraintDrawable.m
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -22,16 +22,16 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import "IBViewEditorLayoutConstraintDrawable.h"
+#import "IBAutolayoutConstraintDrawable.h"
 #import "IBLayoutConstraint.h"
 
 
-@interface RRViewEditorLayoutConstraintDrawable : NSObject <IBViewEditorLayoutConstraintDrawable>
+@interface RRAutolayoutConstraintDrawable : NSObject <IBAutolayoutConstraintDrawable>
 
 @end
 
 
-@implementation RRViewEditorLayoutConstraintDrawable
+@implementation RRAutolayoutConstraintDrawable
 
 
 #pragma mark -
@@ -39,12 +39,12 @@
 
 
 + (void)load {
-    [NSClassFromString(@"IBViewEditorLayoutConstraintDrawable") importMethodsFromClass:[self class] exchangeImplementationsPrefix:"rr_"];
+    [NSClassFromString(@"IBAutolayoutConstraintDrawable") importMethodsFromClass:[self class] exchangeImplementationsPrefix:"rr_"];
 }
 
 
 #pragma mark -
-#pragma mark IBViewEditorLayoutConstraintDrawable
+#pragma mark IBAutolayoutConstraintDrawable
 
 
 - (void)rr_setColor:(NSColor *)color {
@@ -62,9 +62,7 @@
     }
     
     [self rr_setDashed:dashed];
-
 }
-
 
 
 @end

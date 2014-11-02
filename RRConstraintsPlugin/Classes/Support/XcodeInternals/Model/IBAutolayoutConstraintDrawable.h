@@ -1,5 +1,5 @@
 //
-//  IBViewEditorLayoutConstraintDrawable.h
+//  IBAutolayoutConstraintDrawable.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -25,7 +25,7 @@
 @class IBLayoutConstraint;
 
 
-@protocol IBViewEditorLayoutConstraintDrawable <NSObject>
+@protocol IBAutolayoutConstraintDrawable <NSObject>
 @optional
 
 @property(retain, nonatomic) IBLayoutConstraint *constraint;
@@ -35,6 +35,6 @@
 @end
 
 
-@interface IBViewEditorLayoutConstraintDrawable : NSObject <IBViewEditorLayoutConstraintDrawable>
+@interface IBAutolayoutConstraintDrawable : NSObject <IBAutolayoutConstraintDrawable>
 
 @end

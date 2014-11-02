@@ -17,18 +17,13 @@
 		F0211FF418C65071007E403F /* RROutlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0211FF318C65071007E403F /* RROutlineViewController.m */; };
 		F024B35F18FD32C500BA6E1A /* remove_at_build_time_gray_dash.png in Resources */ = {isa = PBXBuildFile; fileRef = F024B35E18FD32C500BA6E1A /* remove_at_build_time_gray_dash.png */; };
 		F02F934118CB8A690015A342 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F02F934018CB8A690015A342 /* index.html */; };
-		F030830318FD23F4003A06B6 /* RRViewEditorLayoutConstraintDrawable.m in Sources */ = {isa = PBXBuildFile; fileRef = F030830218FD23F4003A06B6 /* RRViewEditorLayoutConstraintDrawable.m */; };
-		F03D88C018C5260B005C0DF6 /* RRInspectorReferencingConstraintView.m in Sources */ = {isa = PBXBuildFile; fileRef = F03D88BF18C5260B005C0DF6 /* RRInspectorReferencingConstraintView.m */; };
+		F030830318FD23F4003A06B6 /* RRAutolayoutConstraintDrawable.m in Sources */ = {isa = PBXBuildFile; fileRef = F030830218FD23F4003A06B6 /* RRAutolayoutConstraintDrawable.m */; };
 		F063112518C5426500B643BE /* RRLayoutConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F063112418C5426500B643BE /* RRLayoutConstant.m */; };
 		F0758FFF18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0758FFE18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m */; };
-		F08E7A7818F9BEC900FFF40C /* double_click_to_edit.png in Resources */ = {isa = PBXBuildFile; fileRef = F08E7A7718F9BEC900FFF40C /* double_click_to_edit.png */; };
 		F0CFA88218CA814600D223C6 /* RRCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFA88118CA814600D223C6 /* RRCanvasViewController.m */; };
 		F0D91F4018CBA4E900C95205 /* constraint_in_editor_attribute_inspector.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D91F3918CBA4E900C95205 /* constraint_in_editor_attribute_inspector.png */; };
-		F0D91F4118CBA4E900C95205 /* differentiate_when_firstitem.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D91F3A18CBA4E900C95205 /* differentiate_when_firstitem.png */; };
 		F0D91F4218CBA4E900C95205 /* double_click_constraint_in_outline_attribute_inspector.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D91F3B18CBA4E900C95205 /* double_click_constraint_in_outline_attribute_inspector.png */; };
-		F0D91F4318CBA4E900C95205 /* inline_constant_editing.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D91F3C18CBA4E900C95205 /* inline_constant_editing.png */; };
 		F0D91F4418CBA4E900C95205 /* remove_at_build_time.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D91F3D18CBA4E900C95205 /* remove_at_build_time.png */; };
-		F0D91F4518CBA4E900C95205 /* reverse_first_and_second-item_from_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D91F3E18CBA4E900C95205 /* reverse_first_and_second-item_from_menu.png */; };
 		F0E4D42C18C48AF200B2BCAA /* RRInspectorReferencingConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E4D42B18C48AF200B2BCAA /* RRInspectorReferencingConstraintViewController.m */; };
 		F0E6217818CB8993004536F0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E6217718CB8993004536F0 /* WebKit.framework */; };
 		F0EFCACE18F866EB005285CE /* RRAutolayoutConstraintAdditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EFCACD18F866EB005285CE /* RRAutolayoutConstraintAdditionViewController.m */; };
@@ -58,18 +53,17 @@
 		F024B35E18FD32C500BA6E1A /* remove_at_build_time_gray_dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove_at_build_time_gray_dash.png; sourceTree = "<group>"; };
 		F0268EE218DB2DD70083E288 /* IBLayoutConstraintItemInspectorProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBLayoutConstraintItemInspectorProperty.h; sourceTree = "<group>"; };
 		F02F934018CB8A690015A342 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		F030830218FD23F4003A06B6 /* RRViewEditorLayoutConstraintDrawable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRViewEditorLayoutConstraintDrawable.m; sourceTree = "<group>"; };
+		F030830218FD23F4003A06B6 /* RRAutolayoutConstraintDrawable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRAutolayoutConstraintDrawable.m; sourceTree = "<group>"; };
 		F03476E718DA15D200B0BD0B /* IBHybridStructureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBHybridStructureViewController.h; sourceTree = "<group>"; };
-		F03D88BF18C5260B005C0DF6 /* RRInspectorReferencingConstraintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRInspectorReferencingConstraintView.m; sourceTree = "<group>"; };
 		F041CE1E18F89580008A501D /* IBAutolayoutConstraintAdditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBAutolayoutConstraintAdditionViewController.h; sourceTree = "<group>"; };
 		F041CE1F18F896FB008A501D /* IBAutolayoutConstraintAdditionTypeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBAutolayoutConstraintAdditionTypeConfig.h; sourceTree = "<group>"; };
+		F048D7DD1A064470003622E9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F05CD3AD18DAF4FF00331A6A /* IBOutlineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBOutlineView.h; sourceTree = "<group>"; };
 		F063112418C5426500B643BE /* RRLayoutConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRLayoutConstant.m; sourceTree = "<group>"; };
 		F063BEA418C533B700695BDE /* RRInspectorReferencingConstraintViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRInspectorReferencingConstraintViewDelegate.h; sourceTree = "<group>"; };
 		F0758FFD18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RRReplaceAdditions.h"; sourceTree = "<group>"; };
 		F0758FFE18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RRReplaceAdditions.m"; sourceTree = "<group>"; };
-		F07EA62018FD2CBE008023F6 /* IBViewEditorLayoutConstraintDrawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBViewEditorLayoutConstraintDrawable.h; sourceTree = "<group>"; };
-		F08E7A7718F9BEC900FFF40C /* double_click_to_edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = double_click_to_edit.png; sourceTree = "<group>"; };
+		F07EA62018FD2CBE008023F6 /* IBAutolayoutConstraintDrawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBAutolayoutConstraintDrawable.h; sourceTree = "<group>"; };
 		F09A7A9618CB521C00F698D3 /* IBCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBCanvasViewController.h; sourceTree = "<group>"; };
 		F09A7A9718CB521C00F698D3 /* IBInspectorReferencingConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBInspectorReferencingConstraintViewController.h; sourceTree = "<group>"; };
 		F09A7A9818CB521C00F698D3 /* IBOutlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBOutlineViewController.h; sourceTree = "<group>"; };
@@ -93,11 +87,8 @@
 		F0C31C6D18DB3CF100089505 /* IBStoryboardStructureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBStoryboardStructureViewController.h; sourceTree = "<group>"; };
 		F0CFA88118CA814600D223C6 /* RRCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRCanvasViewController.m; sourceTree = "<group>"; };
 		F0D91F3918CBA4E900C95205 /* constraint_in_editor_attribute_inspector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = constraint_in_editor_attribute_inspector.png; sourceTree = "<group>"; };
-		F0D91F3A18CBA4E900C95205 /* differentiate_when_firstitem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = differentiate_when_firstitem.png; sourceTree = "<group>"; };
 		F0D91F3B18CBA4E900C95205 /* double_click_constraint_in_outline_attribute_inspector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = double_click_constraint_in_outline_attribute_inspector.png; sourceTree = "<group>"; };
-		F0D91F3C18CBA4E900C95205 /* inline_constant_editing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inline_constant_editing.png; sourceTree = "<group>"; };
 		F0D91F3D18CBA4E900C95205 /* remove_at_build_time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove_at_build_time.png; sourceTree = "<group>"; };
-		F0D91F3E18CBA4E900C95205 /* reverse_first_and_second-item_from_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reverse_first_and_second-item_from_menu.png"; sourceTree = "<group>"; };
 		F0E4D42B18C48AF200B2BCAA /* RRInspectorReferencingConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRInspectorReferencingConstraintViewController.m; sourceTree = "<group>"; };
 		F0E6217718CB8993004536F0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F0EC52BB18F91FAA00E01BF6 /* IBLayoutConstraintMultiplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLayoutConstraintMultiplier.h; sourceTree = "<group>"; };
@@ -197,6 +188,7 @@
 			children = (
 				F0D91F3818CBA4E900C95205 /* Images */,
 				F02F934018CB8A690015A342 /* index.html */,
+				F048D7DD1A064470003622E9 /* README.md */,
 			);
 			path = ChangeLog;
 			sourceTree = "<group>";
@@ -204,7 +196,6 @@
 		F0758FF818C37D2500B6BE01 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F03D88BF18C5260B005C0DF6 /* RRInspectorReferencingConstraintView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				F063112418C5426500B643BE /* RRLayoutConstant.m */,
-				F030830218FD23F4003A06B6 /* RRViewEditorLayoutConstraintDrawable.m */,
+				F030830218FD23F4003A06B6 /* RRAutolayoutConstraintDrawable.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,7 +278,7 @@
 				F09A7AA018CB521C00F698D3 /* IBLayoutConstraint.h */,
 				F0EC52BB18F91FAA00E01BF6 /* IBLayoutConstraintMultiplier.h */,
 				F09A7AA118CB521C00F698D3 /* IBOutlineViewControllerItem.h */,
-				F07EA62018FD2CBE008023F6 /* IBViewEditorLayoutConstraintDrawable.h */,
+				F07EA62018FD2CBE008023F6 /* IBAutolayoutConstraintDrawable.h */,
 				F09A7AA218CB521C00F698D3 /* IDEMenuKeyBindingSet.h */,
 			);
 			path = Model;
@@ -327,15 +318,11 @@
 			isa = PBXGroup;
 			children = (
 				F0D91F3918CBA4E900C95205 /* constraint_in_editor_attribute_inspector.png */,
-				F0D91F3A18CBA4E900C95205 /* differentiate_when_firstitem.png */,
 				F012008218F9A8AC00511F84 /* distribute_views.png */,
 				F0D91F3B18CBA4E900C95205 /* double_click_constraint_in_outline_attribute_inspector.png */,
-				F08E7A7718F9BEC900FFF40C /* double_click_to_edit.png */,
 				F00BDA5E18DB33C7007A3B43 /* highlite_in_outline_on_hover.png */,
-				F0D91F3C18CBA4E900C95205 /* inline_constant_editing.png */,
 				F024B35E18FD32C500BA6E1A /* remove_at_build_time_gray_dash.png */,
 				F0D91F3D18CBA4E900C95205 /* remove_at_build_time.png */,
-				F0D91F3E18CBA4E900C95205 /* reverse_first_and_second-item_from_menu.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -421,13 +408,9 @@
 			files = (
 				F0D91F4418CBA4E900C95205 /* remove_at_build_time.png in Resources */,
 				F00BDA6018DB33C7007A3B43 /* highlite_in_outline_on_hover.png in Resources */,
-				F08E7A7818F9BEC900FFF40C /* double_click_to_edit.png in Resources */,
-				F0D91F4518CBA4E900C95205 /* reverse_first_and_second-item_from_menu.png in Resources */,
-				F0D91F4118CBA4E900C95205 /* differentiate_when_firstitem.png in Resources */,
 				F024B35F18FD32C500BA6E1A /* remove_at_build_time_gray_dash.png in Resources */,
 				F0D91F4218CBA4E900C95205 /* double_click_constraint_in_outline_attribute_inspector.png in Resources */,
 				F0F8206718CB720100A99AD3 /* RRWelcomeWindowController.xib in Resources */,
-				F0D91F4318CBA4E900C95205 /* inline_constant_editing.png in Resources */,
 				F012008318F9A8AC00511F84 /* distribute_views.png in Resources */,
 				F02F934118CB8A690015A342 /* index.html in Resources */,
 				F0D91F4018CBA4E900C95205 /* constraint_in_editor_attribute_inspector.png in Resources */,
@@ -443,10 +426,9 @@
 			files = (
 				F0F456FD18DA093C00CD796E /* RRLayoutConstraintItemInspectorProperty.m in Sources */,
 				F0E4D42C18C48AF200B2BCAA /* RRInspectorReferencingConstraintViewController.m in Sources */,
-				F030830318FD23F4003A06B6 /* RRViewEditorLayoutConstraintDrawable.m in Sources */,
+				F030830318FD23F4003A06B6 /* RRAutolayoutConstraintDrawable.m in Sources */,
 				F0211FF418C65071007E403F /* RROutlineViewController.m in Sources */,
 				F01FCE3C18C3740B00F71C33 /* RRConstraintsPlugin.m in Sources */,
-				F03D88C018C5260B005C0DF6 /* RRInspectorReferencingConstraintView.m in Sources */,
 				F0F8206318CB71C900A99AD3 /* RRWelcomeWindowController.m in Sources */,
 				F0FEABB418C3D6E5000B0EEF /* NSImage+RRFilters.m in Sources */,
 				F0CFA88218CA814600D223C6 /* RRCanvasViewController.m in Sources */,
