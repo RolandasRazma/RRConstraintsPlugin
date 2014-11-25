@@ -35,6 +35,7 @@
 @property(nonatomic) NSObject<IBAutolayoutItem> *firstItem;
 @property(nonatomic) NSObject<IBAutolayoutItem> *secondItem;
 @property(nonatomic) NSObject<IBAutolayoutItem> *containingView;
+@property(nonatomic) double priority;
 
 - (instancetype)initWithFirstItem:(id)view1 firstAttribute:(NSLayoutAttribute)attribute1 relation:(NSLayoutRelation)relation secondItem:(id)view2 secondAttribute:(NSLayoutAttribute)secondAttribute multiplier:(IBLayoutConstraintMultiplier *)multiplier constant:(IBLayoutConstant *)constant priority:(double)priority;
 
