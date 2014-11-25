@@ -24,6 +24,7 @@
 //
 // grep -Rs "<className>" /Applications/Xcode.app/ | grep Binary
 // class-dump -HISs -o Headers /Applications/Xcode.app/Contents/PlugIns/IDEInterfaceBuilderKit.ideplugin/Contents/MacOS/IDEInterfaceBuilderKit
+// http://chen.do/blog/2013/10/22/reverse-engineering-xcode-with-dtrace/
 //
 
 
