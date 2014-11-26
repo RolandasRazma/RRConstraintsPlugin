@@ -34,7 +34,7 @@
 #import <objc/runtime.h>
 
 
-@interface RRLayoutConstraintItemInspectorProperty : NSObject <IBLayoutConstraintItemInspectorProperty>
+@interface RRLayoutConstraintItemInspectorProperty : NSViewController <IBLayoutConstraintItemInspectorProperty>
 
 @end
 

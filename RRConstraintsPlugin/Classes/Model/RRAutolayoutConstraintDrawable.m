@@ -50,8 +50,15 @@
 - (void)rr_setColor:(NSColor *)color {
     if( self.constraint.isPlaceholder ){
         color = [NSColor grayColor];
+    }else if( [[NSUserDefaults standardUserDefaults] boolForKey:@"RRConstraintsPlugin.InterfaceBuilderKit.DocumentEditorMenu.Canvas.ColoringConstraints"] ){
+        double priorityStrength = MAX(0.2f, 1.0f *self.constraint.priority /1000.0f);
+
+        color = [NSColor colorWithRed: color.redComponent
+                                green: color.greenComponent 
+                                 blue: color.blueComponent
+                                alpha: priorityStrength];
     }
-    
+
     [self rr_setColor:color];
 }
 

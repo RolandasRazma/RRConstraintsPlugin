@@ -1,5 +1,5 @@
 //
-//  IBAbstractDocumentEditor.h
+//  IDEMenuBuilder.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -22,24 +22,15 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-@import Cocoa;
 
-
-@class IBCanvasViewController, IBDocument, IBStructureViewController, IBCancellationToken;
-
-
-@protocol IBAbstractDocumentEditor <NSObject>
+@protocol IDEMenuBuilder <NSObject>
 @optional
 
-@property(retain, nonatomic) IBCanvasViewController     *canvasViewController;
-@property(retain, nonatomic) IBStructureViewController  *structureViewController;
-
-+ (NSArray *)visibleDocumentEditorControllersFromBackToFrontInDocument:(IBDocument *)document;
-- (BOOL)validateUserInterfaceItem:(NSMenuItem *)menuItem;
++ (NSMenuItem *)_buildSubmenuItemForMenuDefinitionIdentifier:(NSString *)definitionIdentifier forViewController:(NSViewController *)viewController fillingExtensionIdToMenuMap:(id)arg3;
 
 @end
 
 
-@interface IBAbstractDocumentEditor : NSViewController <IBAbstractDocumentEditor>
+@interface IDEMenuBuilder : NSObject <IDEMenuBuilder>
 
 @end

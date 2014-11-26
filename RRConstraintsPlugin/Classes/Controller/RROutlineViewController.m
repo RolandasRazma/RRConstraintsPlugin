@@ -33,7 +33,7 @@
 #import "IDEWorkspaceTabController.h"
 
 
-@interface RROutlineViewController : NSObject <IBOutlineViewController>
+@interface RROutlineViewController : NSViewController <IBOutlineViewController>
 
 @end
 

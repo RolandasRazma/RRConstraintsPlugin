@@ -94,10 +94,26 @@ static RRConstraintsPlugin *sharedPlugin;
         
         [[self.welcomeWindowController window] makeKeyAndOrderFront:self];
         
+        // Default User Defaults
+        [self setStandardUserDefaults];
+        
         [[NSUserDefaults standardUserDefaults] setObject:bundleVersion forKey:@"RRConstraintsPlugin.CFBundleShortVersionString"];
+        
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
+
+}
+
+
+- (void)setStandardUserDefaults {
     
+    NSDictionary *standardUserDefaults = [[NSUserDefaults standardUserDefaults] dictionaryRepresentation];
+    
+    if( ![standardUserDefaults objectForKey:@"RRConstraintsPlugin.InterfaceBuilderKit.DocumentEditorMenu.Canvas.ColoringConstraints"] ){
+        [[NSUserDefaults standardUserDefaults] setBool: YES
+                                                forKey: @"RRConstraintsPlugin.InterfaceBuilderKit.DocumentEditorMenu.Canvas.ColoringConstraints"];
+    }
+
 }
 
 

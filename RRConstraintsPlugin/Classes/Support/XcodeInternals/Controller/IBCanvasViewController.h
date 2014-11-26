@@ -25,7 +25,7 @@
 #import "IDEViewController.h"
 
 
-@class IDEWorkspaceTabController, IBEditor;
+@class IBCanvasView, IDEWorkspaceTabController, IBEditor;
 
 
 @protocol IBCanvasViewController <IDEViewController>
@@ -34,6 +34,7 @@
 - (NSArray *)selectedMembers;
 - (IDEWorkspaceTabController *)activeWorkspaceTabController;
 - (void)editorDidChangeSelection:(IBEditor *)selection;
+- (NSArray *)activeEditors;
 
 @end
 

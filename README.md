@@ -32,6 +32,11 @@ Grayed out and dashed lines for "Remove at build time" constraints
 <img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/remove_at_build_time_gray_dash.png" width="244">
 
 
+Color constraints based on priority (switch on/off in Editor -> Canvas)
+
+<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/color_constraints_based_on_priority.png" width="244">
+
+
 Grayed out icons for "Remove at build time" constraints
 
 <img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/remove_at_build_time.png" width="244">

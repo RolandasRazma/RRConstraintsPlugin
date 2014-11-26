@@ -27,7 +27,7 @@
 #import "IBDocumentObjectMemberWrapper.h"
 
 
-@interface RRInspectorBooleanProperty : NSObject <IDEInspectorBooleanProperty>
+@interface RRInspectorBooleanProperty : NSViewController <IDEInspectorBooleanProperty>
 
 @end
 
