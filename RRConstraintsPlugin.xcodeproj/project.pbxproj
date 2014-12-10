@@ -21,6 +21,7 @@
 		F02F934118CB8A690015A342 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F02F934018CB8A690015A342 /* index.html */; };
 		F030830318FD23F4003A06B6 /* RRAutolayoutConstraintDrawable.m in Sources */ = {isa = PBXBuildFile; fileRef = F030830218FD23F4003A06B6 /* RRAutolayoutConstraintDrawable.m */; };
 		F063112518C5426500B643BE /* RRLayoutConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = F063112418C5426500B643BE /* RRLayoutConstant.m */; };
+		F06E79381A386AC800853721 /* RRSubviewEmbeddingPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F06E79371A386AC800853721 /* RRSubviewEmbeddingPolicy.m */; };
 		F0758FFF18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F0758FFE18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m */; };
 		F0AC82731A261B9600BBACB4 /* color_constraints_based_on_priority.png in Resources */ = {isa = PBXBuildFile; fileRef = F0AC82721A261B9600BBACB4 /* color_constraints_based_on_priority.png */; };
 		F0CFA88218CA814600D223C6 /* RRCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFA88118CA814600D223C6 /* RRCanvasViewController.m */; };
@@ -68,9 +69,15 @@
 		F05CD3AD18DAF4FF00331A6A /* IBOutlineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBOutlineView.h; sourceTree = "<group>"; };
 		F063112418C5426500B643BE /* RRLayoutConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRLayoutConstant.m; sourceTree = "<group>"; };
 		F063BEA418C533B700695BDE /* RRInspectorReferencingConstraintViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRInspectorReferencingConstraintViewDelegate.h; sourceTree = "<group>"; };
+		F06E79351A386A0800853721 /* IBEmbeddingPolicy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBEmbeddingPolicy.h; sourceTree = "<group>"; };
+		F06E79361A386A2C00853721 /* IBSubviewEmbeddingPolicy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBSubviewEmbeddingPolicy.h; sourceTree = "<group>"; };
+		F06E79371A386AC800853721 /* RRSubviewEmbeddingPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRSubviewEmbeddingPolicy.m; sourceTree = "<group>"; };
 		F0758FFD18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RRReplaceAdditions.h"; sourceTree = "<group>"; };
 		F0758FFE18C37E8200B6BE01 /* NSObject+RRReplaceAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RRReplaceAdditions.m"; sourceTree = "<group>"; };
 		F07EA62018FD2CBE008023F6 /* IBAutolayoutConstraintDrawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBAutolayoutConstraintDrawable.h; sourceTree = "<group>"; };
+		F093812B1A388BC300EA2C26 /* IBUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBUIView.h; sourceTree = "<group>"; };
+		F09549FB1A388EF6004B6CB2 /* IBRemoteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBRemoteView.h; sourceTree = "<group>"; };
+		F09549FC1A388F29004B6CB2 /* IBNSCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBNSCustomView.h; sourceTree = "<group>"; };
 		F09A7A9618CB521C00F698D3 /* IBCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBCanvasViewController.h; sourceTree = "<group>"; };
 		F09A7A9718CB521C00F698D3 /* IBInspectorReferencingConstraintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBInspectorReferencingConstraintViewController.h; sourceTree = "<group>"; };
 		F09A7A9818CB521C00F698D3 /* IBOutlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBOutlineViewController.h; sourceTree = "<group>"; };
@@ -240,6 +247,7 @@
 				F063112418C5426500B643BE /* RRLayoutConstant.m */,
 				F030830218FD23F4003A06B6 /* RRAutolayoutConstraintDrawable.m */,
 				F000815A1A260041008E2211 /* RRMenuBuilder.m */,
+				F06E79371A386AC800853721 /* RRSubviewEmbeddingPolicy.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,10 +292,12 @@
 				F0A12AFB18F99587000C02C0 /* IBDecimalLayoutConstraintMultiplier.h */,
 				F09A7A9D18CB521C00F698D3 /* IBDocument.h */,
 				F09A7A9E18CB521C00F698D3 /* IBDocumentObjectMemberWrapper.h */,
+				F06E79351A386A0800853721 /* IBEmbeddingPolicy.h */,
 				F09A7A9F18CB521C00F698D3 /* IBLayoutConstant.h */,
 				F09A7AA018CB521C00F698D3 /* IBLayoutConstraint.h */,
 				F0EC52BB18F91FAA00E01BF6 /* IBLayoutConstraintMultiplier.h */,
 				F09A7AA118CB521C00F698D3 /* IBOutlineViewControllerItem.h */,
+				F06E79361A386A2C00853721 /* IBSubviewEmbeddingPolicy.h */,
 				F07EA62018FD2CBE008023F6 /* IBAutolayoutConstraintDrawable.h */,
 				F09A7AA218CB521C00F698D3 /* IDEMenuKeyBindingSet.h */,
 				F000815C1A2600F3008E2211 /* IDEMenuBuilder.h */,
@@ -311,7 +321,10 @@
 			isa = PBXGroup;
 			children = (
 				F09A7AA818CB521C00F698D3 /* IBInspectorReferencingConstraintView.h */,
+				F09549FC1A388F29004B6CB2 /* IBNSCustomView.h */,
 				F05CD3AD18DAF4FF00331A6A /* IBOutlineView.h */,
+				F09549FB1A388EF6004B6CB2 /* IBRemoteView.h */,
+				F093812B1A388BC300EA2C26 /* IBUIView.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -444,6 +457,7 @@
 				F0211FF418C65071007E403F /* RROutlineViewController.m in Sources */,
 				F01FCE3C18C3740B00F71C33 /* RRConstraintsPlugin.m in Sources */,
 				F0F8206318CB71C900A99AD3 /* RRWelcomeWindowController.m in Sources */,
+				F06E79381A386AC800853721 /* RRSubviewEmbeddingPolicy.m in Sources */,
 				F0FEABB418C3D6E5000B0EEF /* NSImage+RRFilters.m in Sources */,
 				F0CFA88218CA814600D223C6 /* RRCanvasViewController.m in Sources */,
 				F0EFCACE18F866EB005285CE /* RRAutolayoutConstraintAdditionViewController.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  IBInspectorReferencingConstraintView.h
+//  IBOutlineView.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>

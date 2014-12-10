@@ -1,5 +1,5 @@
 //
-//  IBAutolayoutItem.h
+//  IBRemoteView.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -22,15 +22,13 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-@class IBLayoutConstraint;
 
-
-@protocol IBAutolayoutItem <NSObject>
-
-@property(readonly, nonatomic) NSArray *constraints;
-@property(readonly, nonatomic) NSMutableArray *ibInstalledReferencingConstraints;
-
-- (void)ibAddCandidateConstraints:(NSMutableSet *)sonstraints offInEmptyConfigurationAndOnInConfiguration:(id)configuration;
+@protocol IBRemoteView <NSObject>
+@optional
 
 @end
 
+
+@interface IBRemoteView : NSView <IBRemoteView>
+
+@end

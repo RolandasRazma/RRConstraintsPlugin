@@ -1,5 +1,5 @@
 //
-//  IBAutolayoutItem.h
+//  IBSubviewEmbeddingPolicy.h
 //  RRConstraintsPlugin
 //
 //  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
@@ -22,15 +22,21 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-@class IBLayoutConstraint;
+#import "IBEmbeddingPolicy.h"
+#import "IBNSCustomView.h"
 
 
-@protocol IBAutolayoutItem <NSObject>
+@class IBXIBDocument;
 
-@property(readonly, nonatomic) NSArray *constraints;
-@property(readonly, nonatomic) NSMutableArray *ibInstalledReferencingConstraints;
 
-- (void)ibAddCandidateConstraints:(NSMutableSet *)sonstraints offInEmptyConfigurationAndOnInConfiguration:(id)configuration;
+@protocol IBSubviewEmbeddingPolicy <IBEmbeddingPolicy>
+@optional
+
+- (IBNSCustomView *)embedObjects:(NSArray *)objects fromDocument:(IBXIBDocument *)document context:(NSMutableDictionary *)context;
 
 @end
 
+
+@interface IBSubviewEmbeddingPolicy : IBEmbeddingPolicy <IBSubviewEmbeddingPolicy>
+
+@end

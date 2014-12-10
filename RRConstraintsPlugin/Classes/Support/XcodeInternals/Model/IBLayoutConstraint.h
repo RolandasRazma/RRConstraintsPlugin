@@ -30,12 +30,16 @@
 @protocol IBLayoutConstraint <NSObject>
 @optional
 
-@property(retain, nonatomic) IBLayoutConstant *constant;
+@property(retain, nonatomic) IBLayoutConstant   *constant;
 @property(nonatomic, getter=isPlaceholder) BOOL placeholder;
 @property(nonatomic) NSObject<IBAutolayoutItem> *firstItem;
 @property(nonatomic) NSObject<IBAutolayoutItem> *secondItem;
 @property(nonatomic) NSObject<IBAutolayoutItem> *containingView;
-@property(nonatomic) double priority;
+@property(nonatomic) NSLayoutAttribute          firstAttribute;
+@property(nonatomic) NSLayoutAttribute          secondAttribute;
+@property(nonatomic) double                     priority;
+@property(nonatomic) NSLayoutRelation           relation;
+@property(retain, nonatomic) IBLayoutConstraintMultiplier *multiplier;
 
 - (instancetype)initWithFirstItem:(id)view1 firstAttribute:(NSLayoutAttribute)attribute1 relation:(NSLayoutRelation)relation secondItem:(id)view2 secondAttribute:(NSLayoutAttribute)secondAttribute multiplier:(IBLayoutConstraintMultiplier *)multiplier constant:(IBLayoutConstant *)constant priority:(double)priority;
 
