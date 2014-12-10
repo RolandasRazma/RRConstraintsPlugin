@@ -42,6 +42,11 @@ Grayed out icons for "Remove at build time" constraints
 <img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/remove_at_build_time.png" width="244">
 
 
+Keep constraints when embedding to view
+
+<img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/keep_constraints_when_embedding.png" width="244">
+
+
 Distribute views horizontally/vertically (for same width/height views)
 
 <img src="https://raw.github.com/RolandasRazma/RRConstraintsPlugin/develop/RRConstraintsPlugin/Resources/ChangeLog/Images/distribute_views.png" width="244">

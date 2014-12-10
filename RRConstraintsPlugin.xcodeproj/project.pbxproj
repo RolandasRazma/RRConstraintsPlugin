@@ -30,6 +30,7 @@
 		F0D91F4418CBA4E900C95205 /* remove_at_build_time.png in Resources */ = {isa = PBXBuildFile; fileRef = F0D91F3D18CBA4E900C95205 /* remove_at_build_time.png */; };
 		F0E4D42C18C48AF200B2BCAA /* RRInspectorReferencingConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E4D42B18C48AF200B2BCAA /* RRInspectorReferencingConstraintViewController.m */; };
 		F0E6217818CB8993004536F0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E6217718CB8993004536F0 /* WebKit.framework */; };
+		F0EE69741A38A6A9001E56B1 /* keep_constraints_when_embedding.png in Resources */ = {isa = PBXBuildFile; fileRef = F0EE69731A38A6A9001E56B1 /* keep_constraints_when_embedding.png */; };
 		F0EFCACE18F866EB005285CE /* RRAutolayoutConstraintAdditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EFCACD18F866EB005285CE /* RRAutolayoutConstraintAdditionViewController.m */; };
 		F0F456FD18DA093C00CD796E /* RRLayoutConstraintItemInspectorProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F456FC18DA093C00CD796E /* RRLayoutConstraintItemInspectorProperty.m */; };
 		F0F8206318CB71C900A99AD3 /* RRWelcomeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F8206118CB71C900A99AD3 /* RRWelcomeWindowController.m */; };
@@ -107,6 +108,7 @@
 		F0E4D42B18C48AF200B2BCAA /* RRInspectorReferencingConstraintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRInspectorReferencingConstraintViewController.m; sourceTree = "<group>"; };
 		F0E6217718CB8993004536F0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F0EC52BB18F91FAA00E01BF6 /* IBLayoutConstraintMultiplier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBLayoutConstraintMultiplier.h; sourceTree = "<group>"; };
+		F0EE69731A38A6A9001E56B1 /* keep_constraints_when_embedding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keep_constraints_when_embedding.png; sourceTree = "<group>"; };
 		F0EFCACD18F866EB005285CE /* RRAutolayoutConstraintAdditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRAutolayoutConstraintAdditionViewController.m; sourceTree = "<group>"; };
 		F0F456FC18DA093C00CD796E /* RRLayoutConstraintItemInspectorProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRLayoutConstraintItemInspectorProperty.m; sourceTree = "<group>"; };
 		F0F8206018CB71C900A99AD3 /* RRWelcomeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRWelcomeWindowController.h; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				F012008218F9A8AC00511F84 /* distribute_views.png */,
 				F0D91F3B18CBA4E900C95205 /* double_click_constraint_in_outline_attribute_inspector.png */,
 				F00BDA5E18DB33C7007A3B43 /* highlite_in_outline_on_hover.png */,
+				F0EE69731A38A6A9001E56B1 /* keep_constraints_when_embedding.png */,
 				F024B35E18FD32C500BA6E1A /* remove_at_build_time_gray_dash.png */,
 				F0D91F3D18CBA4E900C95205 /* remove_at_build_time.png */,
 			);
@@ -432,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0EE69741A38A6A9001E56B1 /* keep_constraints_when_embedding.png in Resources */,
 				F0D91F4418CBA4E900C95205 /* remove_at_build_time.png in Resources */,
 				F00BDA6018DB33C7007A3B43 /* highlite_in_outline_on_hover.png in Resources */,
 				F024B35F18FD32C500BA6E1A /* remove_at_build_time_gray_dash.png in Resources */,
