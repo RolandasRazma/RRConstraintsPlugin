@@ -51,12 +51,9 @@
 - (IBNSCustomView *)rr_embedObjects:(NSArray *)objects fromDocument:(IBXIBDocument *)document context:(NSMutableDictionary *)context {
 
     // Store constraints
-    NSObject<IBAutolayoutItem> *commonSuperview;
     NSMapTable *constraints = [NSMapTable mapTableWithKeyOptions:NSMapTableWeakMemory valueOptions:NSMapTableStrongMemory];
     for( IBUIView *view in objects ){
         [constraints setObject:view.ibInstalledReferencingConstraints forKey:view];
-        
-        commonSuperview = view.superview;
     }
     
     IBNSCustomView *newParentView = [self rr_embedObjects:objects fromDocument:document context:context];
@@ -69,29 +66,39 @@
         for( IBLayoutConstraint *layoutConstraint in oldConstraints ){
             if( [newConstraints containsObject:layoutConstraint] ) continue;
 
-            // did second item changed?
-            if( [layoutConstraint.firstItem isEqualTo:view] ){
-                
-                if( [layoutConstraint.secondItem isEqual:commonSuperview] ){
-                    [layoutConstraint setSecondItem: newParentView];
-                    [layoutConstraint setContainingView:newParentView];
-                }else{
-                    [layoutConstraint setFirstItem: newParentView];
-                }
-                
-            }
-            // did first item changed?
-            else {
-                
-                if( [layoutConstraint.firstItem isEqual:commonSuperview] ){
-                    [layoutConstraint setFirstItem: newParentView];
-                    [layoutConstraint setContainingView:newParentView];
-                }else{
-                    [layoutConstraint setSecondItem: newParentView];
-                }
-                
-            }
+            BOOL wasFirstItemMoved = [layoutConstraint.firstItem isEqualTo:view];
+            if( wasFirstItemMoved ){
 
+                // Did both items moved?
+                if( [layoutConstraint.secondItem.superview isEqual:layoutConstraint.firstItem.superview] ){
+                    [layoutConstraint setContainingView:newParentView];
+                }
+                // If only 1
+                else{
+                    if( [layoutConstraint.secondItem.superview isEqual:newParentView.superview] ){
+                        [layoutConstraint setFirstItem: newParentView];
+                    }else{
+                        [layoutConstraint setSecondItem: newParentView];
+                    }
+                }
+                
+            }else{
+
+                // Did both items moved?
+                if( [layoutConstraint.secondItem.superview isEqual:layoutConstraint.firstItem.superview] ){
+                    [layoutConstraint setContainingView:newParentView];
+                }
+                // If only 1
+                else{
+                    if( [layoutConstraint.firstItem.superview isEqual:newParentView.superview] ){
+                        [layoutConstraint setSecondItem: newParentView];
+                    }else{
+                        [layoutConstraint setFirstItem: newParentView];
+                    }
+                }
+                
+            }
+            
             [layoutConstraint.containingView ibAddCandidateConstraints:[NSMutableSet setWithObject:layoutConstraint] offInEmptyConfigurationAndOnInConfiguration:nil];
         }
     }
