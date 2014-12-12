@@ -51,13 +51,15 @@
 - (IBNSCustomView *)rr_embedObjects:(NSArray *)objects fromDocument:(IBXIBDocument *)document context:(NSMutableDictionary *)context {
 
     // Store constraints
+    NSObject<IBAutolayoutItem> *commonSuperview;
     NSMapTable *constraints = [NSMapTable mapTableWithKeyOptions:NSMapTableWeakMemory valueOptions:NSMapTableStrongMemory];
     for( IBUIView *view in objects ){
         [constraints setObject:view.ibInstalledReferencingConstraints forKey:view];
+        
+        commonSuperview = view.superview;
     }
     
     IBNSCustomView *newParentView = [self rr_embedObjects:objects fromDocument:document context:context];
-    NSMutableSet *newParentViewConstraints = [NSMutableSet set];
     
     // Check for lost constraints
     for( IBUIView *view in objects ){
@@ -67,21 +69,31 @@
         for( IBLayoutConstraint *layoutConstraint in oldConstraints ){
             if( [newConstraints containsObject:layoutConstraint] ) continue;
 
+            // did second item changed?
             if( [layoutConstraint.firstItem isEqualTo:view] ){
-                [layoutConstraint setSecondItem: newParentView];
-            }else{
-                [layoutConstraint setFirstItem: newParentView];
+                
+                if( [layoutConstraint.secondItem isEqual:commonSuperview] ){
+                    [layoutConstraint setSecondItem: newParentView];
+                    [layoutConstraint setContainingView:newParentView];
+                }else{
+                    [layoutConstraint setFirstItem: newParentView];
+                }
+                
             }
-            
-            [layoutConstraint setContainingView:newParentView];
-            
-            [newParentViewConstraints addObject: layoutConstraint];
+            // did first item changed?
+            else {
+                
+                if( [layoutConstraint.firstItem isEqual:commonSuperview] ){
+                    [layoutConstraint setFirstItem: newParentView];
+                    [layoutConstraint setContainingView:newParentView];
+                }else{
+                    [layoutConstraint setSecondItem: newParentView];
+                }
+                
+            }
+
+            [layoutConstraint.containingView ibAddCandidateConstraints:[NSMutableSet setWithObject:layoutConstraint] offInEmptyConfigurationAndOnInConfiguration:nil];
         }
-    }
-    
-    // Add removed constraints
-    if( newParentViewConstraints.count ){
-        [newParentView ibAddCandidateConstraints:newParentViewConstraints offInEmptyConfigurationAndOnInConfiguration:nil];
     }
     
     return newParentView;
