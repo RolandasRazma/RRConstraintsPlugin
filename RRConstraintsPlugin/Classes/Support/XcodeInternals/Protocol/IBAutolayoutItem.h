@@ -29,6 +29,7 @@
 
 @property(readonly, nonatomic) NSArray *constraints;
 @property(readonly, nonatomic) NSMutableArray *ibInstalledReferencingConstraints;
+@property(readonly, nonatomic) NSObject<IBAutolayoutItem> *superview;
 
 - (void)ibAddCandidateConstraints:(NSMutableSet *)sonstraints offInEmptyConfigurationAndOnInConfiguration:(id)configuration;
 
